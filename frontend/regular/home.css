@@ -1,0 +1,324 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+/* _______________________________________________________________________________________________________________________________________ */
+.modal {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
+    border:1px solid black;
+    border-radius: 10px;
+    z-index:10;
+    background-color:white;
+    width:70%;
+    max-width: 80%;
+    height:70%;
+    max-height: 80%;
+
+}
+/* .res-modal{
+    height: 50%;
+    max-height:50%;
+    width: 50%;
+    max-width: 50%;
+} */
+.res-container{
+    width:fit-content;
+    max-width:fit-content;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+.res-container input{
+    margin-right:0.5em;
+}
+.modal.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modal-header{
+    padding:10px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid black;
+}
+.modal-header .title {
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+    font-size:1.25 rem;
+    font-weight: bold;
+}
+.modal-header .close-button{
+    cursor: pointer;
+    border:none;
+    outline:none;
+    background:none;
+    font-size:1.25rem;
+    font-weight: bold;
+}
+.modal-body{
+    padding:10px 15px;
+    height:85%;
+    position: relative;
+}
+#overlay{
+    transition:200ms ease-in-out;
+    position: fixed;
+    opacity:0;  
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgb(0,0,0,.5);
+    pointer-events: none;
+}
+#overlay.active{
+    pointer-events: all;
+    opacity:1;
+}
+
+
+
+/* _________________________________________________________________________________________________________ */
+.header {
+   text-align: center;
+   width: fit-content;
+}
+.header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    background-color: #3297db;
+    border-radius: 4px;
+    padding: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    width: fit-content;
+
+}
+.navigation{
+    display:flex;
+    justify-content: space-evenly;
+}
+.my_reservations{
+    position: absolute;
+    top:0;
+    right:0;
+    margin:20px;
+    font-size: 13px;
+    background : gray;
+    border-radius: 15px;
+    padding:0px 10px;
+}
+#user_output:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    border-radius: 15px;
+}
+.canvas{
+    display:flex;
+    height:70vh;
+    width:70vw;
+    border:solid black 1px;
+    margin:auto;
+    margin-top:2%;
+}
+.fhf,.fmi,.fzf{
+    position:relative;
+    border-collapse: collapse;
+    border:1px solid black;
+}
+.fzf-wrap{
+    position:relative;
+    height:70%;
+    width:15%;
+    left:3%;
+    top:10%;
+}
+.fmi-wrap{
+    position:relative;
+    height:25%;
+    width: 55%;
+    left:10%;
+    top:3%;
+}
+
+.fhf-wrap{
+    position:relative;
+    top:35%;
+    height:40%;
+    width: 60%;
+    left:-3%;
+}
+.fzf{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.fmi{
+    height:100%;
+    width: 100%;
+}
+.fhf{
+    height:100%;
+    width: 100%;
+    /* height:40%;
+    width: 60%; */
+
+}
+table {
+    border-collapse: collapse;
+    position:relative;
+    /* top:10%;
+    left:5%; */
+  }
+    th, td {
+    border: 0.1em solid black;
+    /* padding: 8px; */
+    text-align: center;
+    cursor: pointer;
+    background-color:white;
+    box-sizing:border-box;
+    color: white;
+  }
+  .formcontainer{
+    margin:auto;   
+    margin-top:1%;
+    width:50%;
+  }
+  .dateform{
+    display:flex;
+    padding:2%;
+
+  }
+  .goto-custom-date{
+    margin-left:1em;
+  }
+  /* .month{
+    margin:auto;
+    width: 50%;
+  } */
+  .table-dynamic{
+    width: 80%;
+    height:80%;
+    margin:auto;
+  }
+  .table-dynamic th tr td {
+    color:black;
+    padding:2em;
+  }
+  .table-dynamic th{
+    border:none;
+  }
+  .table-dynamic tr td{
+    color:black;
+    width: 30px;
+    max-width: 30px;
+  }
+  .table-header{
+    width: fit-content;
+    background-color: burlywood;
+    font-weight: bold;
+  }
+  .td-hover:hover{
+    background-color:lightblue;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+  }
+  .scrollable{
+    height: 70%;
+    max-height:70%;
+    overflow-y:auto;
+  }
+.fx{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    max-width: 80%;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    padding:0.5em;
+    /* border:1px solid gray; */
+    border-radius: 15px;
+
+}
+.fx:hover{
+  background: lightblue;
+}
+.reserve{
+    display: block;
+    margin:auto;
+    /* position:absolute;
+    bottom:0; */
+    margin-top:2em;
+    margin-bottom:2em;
+    width: fit-content;
+    padding:0.5em;
+    border-radius: 15px;
+    border:1px solid black;
+}
+.reserve:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+.message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 10px; */
+    font-size: larger;
+    font-weight: bolder;
+    height:fit-content;
+    width:50%;
+    border:none;
+}
+.div-header{
+    border:none;
+    background-color: gray;
+}
+.div-header:hover{
+    background-color: gray;
+    cursor: default;
+}
+.dynamic-table-header{
+    border-spacing: 0;
+    border:none;
+    border-collapse: collapse;
+    width: 90%;
+    padding:0;
+    margin:auto;
+}
+.dynamic-table-header td{
+    color:black;
+    border:none;
+}
+.delete-reservation-button{
+    position: absolute;
+    right:0;
+    margin-right:20px;
+}
+.square{
+    /* aspect-ratio: 1/1;
+    flex-grow:1; */
+}
+.centerp{
+    margin:auto;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    text-align: center;
+}

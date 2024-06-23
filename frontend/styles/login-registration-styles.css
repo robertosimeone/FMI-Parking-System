@@ -1,0 +1,100 @@
+.form-container {
+    width: 40%;
+    border: 2px black solid;
+
+    margin: auto;
+    margin-top: 100px;
+}
+
+.form-header {
+    text-align: center;
+    border-bottom: 2px white solid;
+    padding: 10px;
+    color: white;
+    background-color: #3297db;
+}
+
+.form-header h2 {
+    margin: 0;
+}
+
+.form-body {
+    padding: 10px;
+    background-color: white;
+}
+
+.form-item {
+    margin-top: 20px;
+}
+
+.form-item input, label {
+    display: block;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.form-item .btn {
+    background-color: #3297db;
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: larger;
+    
+}
+
+.form-item .btn:hover {
+    background-color: white;
+    color: #3297db;
+    margin:auto;
+    cursor: pointer;
+    font-size: larger;
+
+}
+.error-state {
+    margin-left: 20px;
+    color: red;
+    font-size: large;
+}
+.sign-up-link {
+    color: #3297db;
+    font-size: medium;
+    text-decoration: none;
+}
+.sign-up-link:hover {
+    cursor: pointer;
+    color: rebeccapurple;
+}
+:root {
+    --main-bg-color: #1A535C;
+    --loader-bg-color: white;
+    --loader-acc-color: #3297db;
+}
+
+/* EXAMPLE 1 */
+#example-1{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 4em;
+    height: 4em;
+    display: none;
+
+    border-radius: 50%;
+    border: 0.75em solid var(--loader-bg-color);
+    border-top-color: var(--loader-acc-color); /* overrides top color to stand out */
+
+    animation: 2s infinite example-one;
+
+}
+
+@keyframes example-one{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+.radio-group{
+    display:flex;
+    align-items: start;
+    margin-top:5px;
+}

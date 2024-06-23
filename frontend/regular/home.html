@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking</title>
+    <script src="./home.js" defer></script>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+
+<div class="modal" id="modal">
+    <div class="modal-header">
+        <div class="title" id="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="formcontainer" id="formcontainer">
+        <form class="dateform" id="dateform">
+            <div class="month">
+                <label for="month">Дата : </label>
+                <input id="month" type="month" name="month">
+            </div>
+            <button class="goto-custom-date" id="goto-custom-date" type="button">Go</button>
+        </form>
+    </div>
+    <div class="modal-body" id="modal-body">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+         consequatur ullam. Dolor officiis iste consequatur eaque? Ipsam iure
+          quasi asperiores fugiat, a rem recusandae nulla nam mollitia debitis,
+           reprehenderit delectus. Mollitia dolor, ipsam rerum molestias omnis repudiandae
+            fuga deserunt sit soluta fugit officiis voluptatem beatae. Eligendi, totam.
+             Autem tempora accusamus ad hic adipisci enim voluptate perspiciatis temporibus nihil,
+              magni, pariatur et quos dolore excepturi ratione quasi nemo aperiam commodi nam,
+               libero ipsam optio ducimus. Aut nisi quisquam vitae explicabo qui.
+    </div>
+</div>
+<div id="overlay"></div>
+
+     <div class="navigation">
+  <div class="header">
+    <h1>FMI PARKING SYSTEM</h1>
+  </div>
+  <div class="my_reservations">
+    <h3 id="user_output"></h3>
+  </div>
+</div>
+<div class="canvas">
+<div class="fzf-wrap">
+    <p class="centerp">ФЗФ</p>
+    <table class="fzf uni" id="fzf">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div class="fmi-wrap">
+    <p class="centerp">ФМИ</p>
+    <table class="fmi uni" id="fmi">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div class="fhf-wrap">
+    <p class="centerp">ФХФ</p>
+    <table class="fhf uni" id="fhf">
+        <tr>
+            <td>old</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</div>
+
+</body>
+</html> 

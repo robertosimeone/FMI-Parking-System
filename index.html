@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./frontend/styles/login-registration-styles.css">
+    <script src="./frontend/login/login.js" defer></script>
+</head>
+<body>
+    <main class="form-container">
+
+        <header class="form-header">
+            <h2>Вход</h2>
+        </header>
+
+        <section class="form-body">
+            <form id="login-form">
+                <div class="form-item">
+                    <label for="username">Потребителско име</label>
+                    <input id="username" type="text" name="username" >
+                </div>
+                <div class="form-item">
+                    <label for="password">Парола</label>
+                    <input id="password" type="password" name="password">
+                </div>
+                <div class="form-item"> 
+                    <a class="sign-up-link" href="./frontend/registration/registration.html">Нямате акаунт? Впишете се оттук.</a>
+                </div>
+                <div class="form-item">
+                    <button class="btn">Вход</button>
+                </div>
+            </form>
+        </section>
+        <p id="error-state" class="error-state"></p>
+        <div id="example-1" class="loader"></div>
+    </main>
+</body>
+</html>
